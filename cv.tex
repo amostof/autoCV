@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -78,7 +78,7 @@
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\color{violet}\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
@@ -116,48 +116,101 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Amirmahdi Mostofinejad} \\[7.5pt]
+\href{https://github.com/amostof}{\raisebox{-0.05\height}\faGithub\ amostof} \ $|$ \ 
+\href{https://linkedin.com/in/amirmahdimo}{\raisebox{-0.05\height}\faLinkedin\ amirmahdimo} \ $|$ \ 
+\href{https://amostof.github.io/}{\raisebox{-0.05\height}\faGlobe \ amostof.github.io} \ $|$ \ 
+\href{mailto:amir.mostofinejad@utoronto.ca}{\raisebox{-0.05\height}\faEnvelope \ amir.mostofinejad@utoronto.ca} 
+% \ $|$ \  \href{tel:+12267504846}{\raisebox{-0.05\height}\faMobile \ +1 226 750 4846} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+%  SECTIONS
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+{I am a fourth-year Ph.D. candidate actively looking for an internship for summer 2023. My graduate school projects focused on mathematical model development for different biological phenomena, with my master’s focusing on tumor-induced angiogenesis (PDE-based) and my Ph.D. on neotissue growth in bioreactors (ODE-based using SciML on Julia). I have also developed a parameter estimator for biology-informed deep learning in SDE-based dynamical systems. My interests are mathematical modeling, optimization, multiphysics, dynamical systems, deep learning, and physics-informed machine learning.}
 
-%Experience
-\section{Work Experience}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Jan 2021 - present \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Designation} & \hfill Mar 2019 - Jan 2021 \\[3.75pt]
+\textbf{University of Toronto} | \small{Research and teaching assistant} & \hfill May 2019 – Dec. 2023 \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] long long line of blah blah that will wrap when the table fills the column width
-        \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+        \item[--] Modeling the recellularization process in the tracheal scaffolds using optimization and parameter identification supervised by Prof. Cristina Amon
+        \item[--] Developing a methodology for inferring explainable biologically-informed mathematical models and applying it to \textit{in vitro} cell population dynamics using SciML (Julia) and COMSOL Multiphysics
     \end{itemize}
     \end{minipage}
 }
 \end{tabularx}
 
-%Projects
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{University of Waterloo} | \small{Research and teaching assistant} & \hfill Sept. 2016 – May 2019 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Modeled tumor-induced angiogenesis by modeling the migration of the endothelial cells and their interaction with the extracellular matrix, supervised by Prof. Adil Al-Mayah
+        \item[--] Solved a system of partial differential equations describing the biochemical, mechanical, and vasculature using nonlinear finite element analysis in MATLAB
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Prestige Land Iran Co.} | \small{Intern} & \hfill May 2014 – Aug. 2014 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Sampled and tested the quality of concrete specimens
+        \item[--] Checked the final stage of construction, design calculations, and drawings
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Languages &  \normalsize{Python, MATLAB, Julia, C/C++}\\
+Libraries &  \normalsize{SciML, SciPy, scikit-learn, PyTorch, TensorFlow}\\
+Numerical solvers &  \normalsize{COMSOL Multiphysics, FEniCS, Ansys, Abaqus FEA}\\  
+Misc. &  \normalsize{ParaView, MeshLab, Solidworks, AutoCAD, gmsh, Git, Linux, \LaTeX}\\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Physics-informed deep learning for inference in dynamical systems} & \hfill \href{https://drive.google.com/file/d/1ABVhulllwKJmb-b2MjWoaJdsj6STwpX2/view?usp=sharing}{Report} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed a TensorFlow code for parameter estimation of a system of stochastic differential equations using noisy synthetic data.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{SIMPLE solver for the lid-driven cavity problem} & \hfill \href{https://drive.google.com/file/d/1zjLmS6348FML_2pIGlLAlGnuICDzmDFs/view?usp=sharing}{Report} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed a Python solver from scratch to solve the Navier-Stokes equations using ``SIMPLE" method.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{ATP production in cancer cells}\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed a mathematical model for investigating the three different methods for ATP production in cells.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Effects of matrix degradation on pressure-diameter curves in  vessels} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Modeled multilayer common iliac artery using GOH model. Investigated effects of different matrix densities on the pressure-diameter curve of the common iliac artery.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -165,32 +218,117 @@ This CV is automatically generated and deployed using the \href{https://github.c
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+Sep 2019 - present & Ph.D. (Mechanical Engineering) at \textbf{University of Toronto}  \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+Sep 2016 - May 2019 & M.A.Sc. (Civil Engineering) at \textbf{University of Waterloo} \\ 
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+Sep 2011 - Sep 2015 & B.Eng. (Civil Engineering) at \textbf{Sharif University of Technology}\\
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	HONORS \& AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Honors \& Awards}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Barbara and Frank Milligan Graduate Fellowship} & \hfill Oct. 2020 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Graduate studies scholarship issued by the MIE department.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{William Dunbar Memorial Scholarship} & \hfill Apr. 2020. \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Graduate studies scholarship issued by the MIE department.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{MIE fellowship} & \hfill May 20219 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Entrance fellowship provided by the MIE department.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{OGS award} & \hfill July 2018 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Graduate studies scholarship issued by the province of Ontario.}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{PGS award} & \hfill July 2018 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{President's Graduate Scholarship.}  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP
+%----------------------------------------------------------------------------------------
+
+\section{Leadership}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{Director of Academic \& Professional Development} & \hfill AMIGAS, UofT  \\
+\textbf{Member of Executive Committee} & \hfill ISAW, UWaterloo \\ 
+\textbf{Vice President of Scientific Activities} & \hfill Civil Engineering Student Association, Sharif\\
+\textbf{VP of Entrepreneurship} & \hfill Green Tomorrow, Sharif\\
+\quad Student-led charity for struggling families
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
+\section{Publications \& Presentations}
 \begin{refsection}[citations.bib]
 \nocite{*}
 \printbibliography[heading=none]
 \end{refsection}
 
+
+
 %----------------------------------------------------------------------------------------
-%	SKILLS
+%	COURSES
 %----------------------------------------------------------------------------------------
-\section{Skills}
+
+\section{Courses}
+Artificial intelligence, Nonlinear modeling of biological systems, Mathematical cell biology, Cancer mechanics, Finite element analysis, Continuum mechanics, Computational fluid mechanics, Probabilistic modeling. %Reliability \& probabilistic modeling.
+
+%----------------------------------------------------------------------------------------
+%	TEACHING
+%----------------------------------------------------------------------------------------
+\section{Teaching}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{University of Toronto} \\
+MIE334, Numerical Methods I (x3), &
+CSC108, Computer Fundamentals (x4), \\ 
+MIE1625, Data Science \& Quantitative Analysis (x2), &  
+APS105, Intro to Computer Programming (x2), \\
+BME1478, Coding for Biomedical Engineers (x2).\\
+\\
+\textbf{University of Waterloo} \\
+Statics, &
+Structural Concrete Design I, \\
+Mechanics of Solids II. \\
+\\
+
+\textbf{Sharif University of Technology} \\
+ Concrete Technology and Lab.\\
 \end{tabularx}
+
+
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \textbf{University of Toronto}\\
+% MIE334, Numerical Methods I, & Winter 2023, Winter 2022, Winter 2021\\
+% CSC108, Computer Fundamentals, & Winter 2023, Fall 2022, Winter 2022, Winter 2021 \\
+% MIE1625, Data Science \& Quantitative Analysis, & Fall 2022, Winter 2022\\  
+% APS105, Intro to Computer Programming, & Winter 2022, Winter 2021\\
+% BME1478, Coding for Biomedical Engineers, & Winter 2022, Fall 2020\\
+% \\
+% \textbf{University of Waterloo}\\
+% Statics, & Fall 2018 \\
+% Structural Concrete Design I, & Fall 2017 \\
+% Mechanics of Solids II, & Spring 2017 \\
+% \\
+
+% \textbf{Sharif University of Technology}\\
+% Concrete Technology and Lab, & Fall 2014\\
+% \end{tabularx}
 
 \vfill
 \center{\footnotesize Last updated: \today}
